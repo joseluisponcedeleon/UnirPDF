@@ -2,7 +2,18 @@ import streamlit as st
 import PyPDF2
 from datetime import datetime
 
-st.set_page_config(page_title="Unir PDF", page_icon="📎", layout="wide")
+# st.set_page_config(page_title="Unir PDF", page_icon="📎", layout="wide")
+st.set_page_config(
+    page_title="Unir PDF",  # Título de la pestaña del navegador
+    page_icon="📎",         # Icono de la pestaña del navegador
+    layout="wide",          # Utiliza el layout ancho
+    menu_items={
+        'Get Help': None,  # Opcional: Elimina el enlace 'Get Help'
+        'Report a bug': None,  # Opcional: Elimina el enlace 'Report a bug'
+        'About': None,  # Opcional: Elimina el enlace 'About'
+        'Show source code': None  # Omitir para ocultar la opción de "Ver código fuente"
+    }
+)
 
 # Definición de la función para unir PDFs
 def unir_pdfs(output_path, documents):
