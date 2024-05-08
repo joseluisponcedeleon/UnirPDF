@@ -2,18 +2,8 @@ import streamlit as st
 import PyPDF2
 from datetime import datetime
 
-# st.set_page_config(page_title="Unir PDF", page_icon="📎", layout="wide")
+st.set_page_config(page_title="Unir PDF", page_icon="📎", layout="wide")
 
-st.set_page_config(
-    page_title="Unir PDF",
-    page_icon="📎",
-    layout="wide",
-    menu_items={
-        'Get Help': 'https://www.example.com/help',  # Proporciona un enlace alternativo o elimina esta línea si no quieres que aparezca
-        'Report a bug': 'https://www.example.com/report',  # Proporciona un enlace alternativo o elimina esta línea si no quieres que aparezca
-        'About': "This is a PDF merging tool."  # Proporciona una descripción breve o elimina esta línea si no quieres que aparezca
-    }
-)
 
 # Definición de la función para unir PDFs
 def unir_pdfs(output_path, documents):
