@@ -3,15 +3,15 @@ import PyPDF2
 from datetime import datetime
 
 # st.set_page_config(page_title="Unir PDF", page_icon="📎", layout="wide")
+
 st.set_page_config(
-    page_title="Unir PDF",  # Título de la pestaña del navegador
-    page_icon="📎",         # Icono de la pestaña del navegador
-    layout="wide",          # Utiliza el layout ancho
+    page_title="Unir PDF",
+    page_icon="📎",
+    layout="wide",
     menu_items={
-        'Get Help': None,  # Opcional: Elimina el enlace 'Get Help'
-        'Report a bug': None,  # Opcional: Elimina el enlace 'Report a bug'
-        'About': None,  # Opcional: Elimina el enlace 'About'
-        'Show source code': None  # Omitir para ocultar la opción de "Ver código fuente"
+        'Get Help': 'https://www.example.com/help',  # Proporciona un enlace alternativo o elimina esta línea si no quieres que aparezca
+        'Report a bug': 'https://www.example.com/report',  # Proporciona un enlace alternativo o elimina esta línea si no quieres que aparezca
+        'About': "This is a PDF merging tool."  # Proporciona una descripción breve o elimina esta línea si no quieres que aparezca
     }
 )
 
