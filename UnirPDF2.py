@@ -14,7 +14,7 @@ def unir_pdfs(output_path, documents):
 
 # FRONT-END
 #st.image("assets/pdf.webP")  # Muestra una imagen en la interfaz de usuario
-st.image("assets/pdf.webP", width=300)
+st.image("assets/pdf.webp", width=300)
 st.header("¿Necesitas Unir Varios PDFs? ¡Hazlo Aquí!")  # Agrega un encabezado en la interfaz de usuario
 st.subheader("Cargue múltiples PDFs para fusionarlos en un único archivo")  # Agrega un subencabezado en la interfaz de usuario
 
